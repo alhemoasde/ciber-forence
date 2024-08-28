@@ -170,7 +170,7 @@ GPS Position                    : 4 deg 0' 0.00" N, 74 deg 0' 0.00" W
 
 4. Cambie el copyrigth como propiedad para el Pato Donald.
 
-![](https://github.com/alhemoasde/ciber-forence/blob/main/Planetario_Bogota.png){width='100px'}
+![](https://github.com/alhemoasde/ciber-forence/blob/main/Planetario_Bogota.png)
 
 - Vamos a agregar © 2024 Pato Donald. Todos los derechos reservados:
 ```
@@ -224,7 +224,7 @@ GPS Position                    : 4 deg 0' 0.00" N, 74 deg 0' 0.00" W
 
 5. Investigue como extraer la miniatura de una imagen (esto debe estar habilitado en la captura de la misma, caso contrario no es posible). Instale y documente la instalación del interfaz gráfico en Windows. Documente el proceso en github. Tome como referencia https://github.com/FrankBijnen/ExifToolGui?tab=readme-ov-file
 
-![](https://github.com/alhemoasde/ciber-forence/blob/main/Photo.jpg){width='100px'}
+![](https://github.com/alhemoasde/ciber-forence/blob/main/Photo.jpg)
 
 - Primero se valida que la imagen tenga dentro de su metadata el atributo **-ThumbnailImage*
 ```
@@ -235,4 +235,4 @@ Thumbnail Image                 : (Binary data 2302 bytes, use -b option to extr
 ```
 PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -b -ThumbnailImage .\Photo.jpg > Photo-Thumbnail.jpg
 ```
-![](https://github.com/alhemoasde/ciber-forence/blob/main/Photo-Thumbnail.jpg){width='100px'}
+![](https://github.com/alhemoasde/ciber-forence/blob/main/Photo-Thumbnail.jpg)
