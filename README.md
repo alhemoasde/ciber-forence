@@ -68,6 +68,19 @@ Tagged PDF                      : Yes
 ```
 
 2. Guarde la metadata en diferentes formatos (HTML, txt y svc ) para su futuro análisis.
+-Export to **.html**
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -r -all -htmldump .\Taller_Captura.pdf > Taller_Captura.html
+```
+-Export to **.txt**
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -r -all -txt .\Taller_Captura.pdf > Taller_Captura.txt
+```
+-Export to **.csv**
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -r -all -csv .\Taller_Captura.pdf > Taller_Captura.csv
+```
+
 3. Modifique los datos de geo-posición con las coordenadas del Planetario de Bogotá.
 4. Cambie el copyrigth como propiedad para el Pato Donald.
 5. Investigue como extraer la miniatura de una imagen (esto debe estar habilitado en la captura de la misma, caso contrario no es posible). Instale y documente la instalación del interfaz gráfico en Windows. Documente el proceso en github. Tome como referencia https://github.com/FrankBijnen/ExifToolGui?tab=readme-ov-file
