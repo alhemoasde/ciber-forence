@@ -170,6 +170,8 @@ GPS Position                    : 4 deg 0' 0.00" N, 74 deg 0' 0.00" W
 
 4. Cambie el copyrigth como propiedad para el Pato Donald.
 
+![](https://github.com/alhemoasde/ciber-forence/blob/main/Planetario_Bogota.png){width='100px'}
+
 - Vamos a agregar © 2024 Pato Donald. Todos los derechos reservados:
 ```
 PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -Copyright="@2024 Pato Donald. Todos los derechos reservados." .\Planetario_Bogota.png
