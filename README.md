@@ -82,5 +82,93 @@ PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -r -all -csv .\
 ```
 
 3. Modifique los datos de geo-posición con las coordenadas del Planetario de Bogotá.
+-Se descarga una imagen del Planetario de Bogotá y se consulta la metadata:
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe .\Planetario_Bogota.png
+ExifTool Version Number         : 12.93
+File Name                       : Planetario_Bogota.png
+Directory                       : .
+File Size                       : 491 kB
+Zone Identifier                 : Exists
+File Modification Date/Time     : 2024:08:28 15:33:51-05:00
+File Access Date/Time           : 2024:08:28 15:33:51-05:00
+File Creation Date/Time         : 2024:08:28 15:33:50-05:00
+File Permissions                : -rw-rw-rw-
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 1024
+Image Height                    : 678
+Bit Depth                       : 8
+Color Type                      : Palette
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Software                        : Adobe ImageReady
+XMP Toolkit                     : Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27
+Creator Tool                    : Adobe Photoshop CS6 (Windows)
+Instance ID                     : xmp.iid:701D5E48A93611EBB65FFC10E86AEC7C
+Document ID                     : xmp.did:701D5E49A93611EBB65FFC10E86AEC7C
+Derived From Instance ID        : xmp.iid:701D5E46A93611EBB65FFC10E86AEC7C
+Derived From Document ID        : xmp.did:701D5E47A93611EBB65FFC10E86AEC7C
+Palette                         : (Binary data 768 bytes, use -b option to extract)
+Image Size                      : 1024x678
+Megapixels                      : 0.694
+```
+-Ahora vamos agregar nuevos metadatos de geo-posicionamiento:
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -GPSLatitude=4.6121881 -GPSLatitudeRef=N -GPSLongitude=-74.0716352 -GPSLongitudeRef=W .\Planetario_Bogota.png
+Error: File not found - .6121881
+Error: File not found - .0716352
+    1 image files updated
+    2 files weren't updated due to errors
+```
+-Consultamos nuevamente el archivo para consultar los nuevos metadatos:
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe .\Planetario_Bogota.png
+ExifTool Version Number         : 12.93
+File Name                       : Planetario_Bogota.png
+Directory                       : .
+File Size                       : 491 kB
+File Modification Date/Time     : 2024:08:28 15:39:25-05:00
+File Access Date/Time           : 2024:08:28 15:39:33-05:00
+File Creation Date/Time         : 2024:08:28 15:33:50-05:00
+File Permissions                : -rw-rw-rw-
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 1024
+Image Height                    : 678
+Bit Depth                       : 8
+Color Type                      : Palette
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Software                        : Adobe ImageReady
+XMP Toolkit                     : Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27
+Creator Tool                    : Adobe Photoshop CS6 (Windows)
+Instance ID                     : xmp.iid:701D5E48A93611EBB65FFC10E86AEC7C
+Document ID                     : xmp.did:701D5E49A93611EBB65FFC10E86AEC7C
+Derived From Instance ID        : xmp.iid:701D5E46A93611EBB65FFC10E86AEC7C
+Derived From Document ID        : xmp.did:701D5E47A93611EBB65FFC10E86AEC7C
+Palette                         : (Binary data 768 bytes, use -b option to extract)
+Exif Byte Order                 : Big-endian (Motorola, MM)
+X Resolution                    : 72
+Y Resolution                    : 72
+Resolution Unit                 : inches
+Y Cb Cr Positioning             : Centered
+GPS Version ID                  : 2.3.0.0
+GPS Latitude Ref                : North
+GPS Longitude Ref               : West
+Image Size                      : 1024x678
+Megapixels                      : 0.694
+GPS Latitude                    : 4 deg 0' 0.00" N
+GPS Longitude                   : 74 deg 0' 0.00" W
+GPS Position                    : 4 deg 0' 0.00" N, 74 deg 0' 0.00" W
+```
+
 4. Cambie el copyrigth como propiedad para el Pato Donald.
+
+© 2024 Pato Donald. Todos los derechos reservados.
+
 5. Investigue como extraer la miniatura de una imagen (esto debe estar habilitado en la captura de la misma, caso contrario no es posible). Instale y documente la instalación del interfaz gráfico en Windows. Documente el proceso en github. Tome como referencia https://github.com/FrankBijnen/ExifToolGui?tab=readme-ov-file
