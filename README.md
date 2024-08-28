@@ -6,7 +6,7 @@ _Haciendo uso de exifttool tome tres tipos diferentes de archivo y:_
 
 Para eliminar la metadata de un archivo ingresamos a la carpeta de instalación del programa exifttool y ejecutamos:
 - Inicialmente leer la metadata:
-´
+```
 Windows PowerShell
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
@@ -39,9 +39,9 @@ Modify Date                     : 2024:08:27 12:04:36-05:00
 Document ID                     : uuid:29EE37EB-C813-49A2-9D53-E64B61E5B537
 Instance ID                     : uuid:29EE37EB-C813-49A2-9D53-E64B61E5B537
 Author                          : DHC. JAIDER OSPINA NAVAS
-´
+```
 - Ahora eliminamos la metadata del archivo:
-´
+```
 PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -all=.\Taller_clase_FOCA.pdf
 Warning: [minor] ExifTool PDF edits are reversible. Deleted tags may be recovered! - ./Taller_clase_FOCA.pdf
     1 image files updated
@@ -65,7 +65,7 @@ Linearized                      : No
 Page Count                      : 7
 Language                        : es
 Tagged PDF                      : Yes
-´
+```
 
 2. Guarde la metadata en diferentes formatos (HTML, txt y svc ) para su futuro análisis.
 3. Modifique los datos de geo-posición con las coordenadas del Planetario de Bogotá.
