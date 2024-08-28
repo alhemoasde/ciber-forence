@@ -221,3 +221,13 @@ GPS Position                    : 4 deg 0' 0.00" N, 74 deg 0' 0.00" W
 ```
 
 5. Investigue como extraer la miniatura de una imagen (esto debe estar habilitado en la captura de la misma, caso contrario no es posible). Instale y documente la instalación del interfaz gráfico en Windows. Documente el proceso en github. Tome como referencia https://github.com/FrankBijnen/ExifToolGui?tab=readme-ov-file
+
+- Primero se valida que la imagen tenga dentro de su metadata el atributo **-ThumbnailImage*
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -ThumbnailImage .\Photo.jpg
+Thumbnail Image                 : (Binary data 2302 bytes, use -b option to extract)
+```
+- Ahora vamos a extraer la imagen de miniatura:
+```
+PS F:\DIPLOMADO 2024_PROGRAMAS\exiftool-12.93_64> .\exiftool.exe -b -ThumbnailImage .\Photo.jpg > Photo-Thumbnail.jpg
+```
